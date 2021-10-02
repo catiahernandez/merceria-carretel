@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+	<header class="conteinter logo-nav">
+		<nav class="nav">
+			<h1>Merceria Carretel</h1>
+			<ul>
+				<li><a href="../index.html">INICIO</a></li>
+				<li><a href="Productos.html">PRODUCTOS</a></li>
+				<li><a href="Contacto.html">CONTACTO</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h1 class="titulo">Contacto</h1>
+
+		<div class="container">
+			
+			<div class="container-contacto">
+				
+				<form id="formulario-contacto" action="#" method="POST" enctype="multipart/form-data">
+
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" name="nombre">
+
+					<label for="apellido">Apellido:</label>
+					<input type="text" id="apellido" name="apellido">
+
+					<label for="mensaje">Mensaje:</label>
+					<textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+					<label for="provincia">Localidad:</label>
+					<select name="provincia" id="provincia">
+						<option value="RAAF">Rafaela</option>
+						<option value="TC">Tacural</option>
+						<option value="ALD">Aldao</option>
+						<option value="HTO">Humberto</option>
+						<option value="ATV">Ataliva</option>
+						<option value="SUN">Sunchales</option>
+					</select>
+					<input class="reset" type="reset" value="Limpiar">
+					<input class="submit" type="submit" value="Enviar">
+
+				</form>
+
+			</div>
+		</div>
+	</main>
+	<footer> 
+		<img class= "iconosRedes" src="../Imagenes/insta.png" alt="Instagram">
+		<img class= "iconosRedes" src="../Imagenes/fc.png" alt="Facebook">
+		<img class= "iconosRedes" src="../Imagenes/whtapp.png" alt="Whatsapp">
+    </footer>
+</body>
+</html>

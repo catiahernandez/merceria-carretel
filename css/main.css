@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  height: 200px;
+  background-color:white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background-color: #e7008a;
+}
+
+nav h1 {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+}
+
+
+li {
+  display: inline-block;
+  justify-content: space-between;
+  width: 30%;
+  position:relative;
+}
+a{
+  font-weight: bold;
+  font- size: 14px;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  list-style-type: disc;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+ul li:hover ul a:hover {
+  background-color: white; 
+}
+
+.seccionQuienessomos{
+  float: left;
+  padding: 1rem;
+}
+
+.seccionUbicacion{
+  width: 100%;
+  float: left;
+  padding: 1rem;
+}
+
+
+.titulo{
+  color: #e7008a;
+  font-size: 1.5rem;
+  line-height: 1.3em;
+  text-aline: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.texto{
+  margin-bottom: 1.6rem;
+  color: black;
+}
+.coverflow{
+  width: 20%;
+  height: auto;
+}
+
+.iconosRedes{
+  display: inline;
+  float: right;
+  width: 4%;
+  height: auto;
+  background-color: #e7008a;
+  animation-name: redessociales;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards
+}
+@keyframes redessociales {
+from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+}
+
+
+.bodyProductos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); 
+  height: 100vh;
+  grid-template-areas: 
+  "header header header "
+  "main main none "
+  "none none footer"
+  ;
+}
+
+.ProductosConteinter logo-nav{
+  grid-area: header;
+}
+
+.conteiner menuProductos{
+  grid-area: main;
+}
+
+.footer iconosRedes {
+  grid-area: footer;
+}
+
+footer img{
+  animation-name: redessociales;
+  animation-duration: 4s
+}
+
+@keyframes redessociales {
+
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
